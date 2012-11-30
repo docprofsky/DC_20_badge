@@ -56,116 +56,50 @@ CON
 
     'Propeller pin constant definitions.  Works with any Defcon 20 board.
   VGA_BASE_PIN  = 16
+        _device         = 0     'accept any device code
+        _dlyrpt         = 6     'delay before acception code as repeat   
+        
           
 VAR
-long stack[90]                    'Establish working space
-       'LONG code1[128], code1len
-       byte code1[513]
-       long code1len
-       byte code2[513]
-       long code2len
+
 OBJ
 
                                 'select one rcvir and one term
                                 
-        'rcvir   : "ir_reader_nec"
-        'rcvir   : "ir_reader_sony"
-
-        term    : "FullDuplexSerial64"
-        magicir : "magicir_010"     
-        leds    : "jm_pwm8"
+        rcvir   : "ir_reader_rc5"
         VGA     : "VGA_Text_Defcon.spin" 
 
-PUB start
-  term.start(RX1, TX1, %0000, 57600)
-  'leds.start(8, LED1)                                         ' start drivers
-
-  'leds.set_all(0)
-  'leds.set(7, $FF)
-
+PUB start | keycode
   VGA.Start(VGA_BASE_PIN)
 
   VGA.Str(string("Starting..")) 
 
   pause(5)
 
-  cognew(IR_recv,@stack[0])
-  cognew(IR_transmit,@stack[60])
-  pause(10)
-  VGA.Str(string(13))
+
+  
+  rcvir.init(RX1,_device,_dlyrpt,true)   'startup
+  
+  repeat
+    keycode := rcvir.fifo_get   'try a get from fifo
+    if keycode == -1
+       VGA.Str(String("N"))            'empty try again
+      next
+    if keycode & $80
+      VGA.Str(String("R"))             'show repeated code
+      VGA.dec(keycode & $7F)
+    else
+      VGA.dec(keycode)         'show code
+    'sp
+                                'device code is in low 16 bits
+    'term.hex(rcvir.fifo_get_lastvalid,8)
 
 
-PUB IR_recv | i, k
-VGA.Str(string("R"))
-repeat
-    k := 0
-    magicir.storecode(IRRX, @code1, @code1len)
-    VGA.Str(string("Got IR:",13))    
-    'leds.set(0, $FF)
-    repeat i from 0 to 10
-      VGA.hex(byte[code1[i]],2)
-    VGA.Str(string(13))  
+  
 
-    repeat i from 0 to 511                 
-      term.tx(byte[code1[i]])
-      k := k+1
-      'VGA.hex(byte[code1[i]],1)
+repeat     
+ 
 
-    VGA.Str(string("sent:"))
-    VGA.dec(k)
-    VGA.Str(13)
-
-      
-    'code1len := 70
-
-    VGA.Str(string("Len1:"))
-    VGA.dec(code1len)
-    VGA.Str(13)
-    
-    'VGA.Str(string("sending.",13)) 
-    'magicir.playcode(IRTX,@code1,@code1len)
-    'VGA.Str(string("done",13)) 
-
-    'VGA.Str(string("Len2:"))
-    'VGA.dec(code1len)
-    'VGA.Str(13)
-    
-    
-    pause(50)
-    'leds.set(0, $00)
-    
-    pause(10)   
-
-
-pub IR_transmit | i, k
-VGA.Str(string("T"))
-code2len := 70
-
-repeat
-   k := 0   
-   repeat i from 0 to 511     
-    code1[i] := term.rx
-    VGA.Str(string("["))
-    VGA.dec(k)
-    VGA.Str(string("]"))
-    k := k+1   
-    'VGA.hex(byte[code1[i]],1) 
-    'leds.set(1, $FF)
-   'leds.set(1, $00)
-   VGA.Str(string("Got serial:",13))
-     repeat i from 0 to 10
-      VGA.hex(byte[code2[i]],2)
-    VGA.Str(string(13))  
-   
-   'leds.set(2, $FF)
-     VGA.Str(string("sending.",13)) 
-   magicir.playcode(IRTX,@code2,@code2len)
-   VGA.Str(string("done",13))
-   pause(50)
-   'leds.set(2, $00)
-    
-   pause(10)
-   
 pub pause(ms) | t
 
 '' Delay program in milliseconds
@@ -177,7 +111,4 @@ pub pause(ms) | t
     t := cnt - 1792                                             ' sync with system counter
     repeat ms                                                   ' run delay
       waitcnt(t += MS_001)
-
-PUB nl
-  term.tx(13)
-  term.tx(10)
+    
