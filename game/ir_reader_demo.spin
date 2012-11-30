@@ -49,7 +49,8 @@ CON
         
         
 VAR
-     byte screen[480]
+     byte screen[32]
+     long block
 OBJ
 
                                 'select one rcvir and one term
@@ -62,14 +63,15 @@ OBJ
         VGA     : "VGA_Text_Defcon.spin" 
 
 
-PUB start | keycode, block
+PUB start | keycode, i
 
   
   term.start(30)                'start the tv terminal
 
     VGA.Start(VGA_BASE_PIN)
 
-  VGA.Str(string("Starting..")) 
+  'VGA.Str(string("Starting..")) 
+  'VGA.Str(13)
 
   pause(5)
   
@@ -78,35 +80,42 @@ PUB start | keycode, block
 
   block := 16
   
+  if (cognew(updateScreen,0) == -1)
+    VGA.str(string("Could not start thread"))
+  
+  
   repeat
     keycode := rcvir.fifo_get   'try a get from fifo
     if keycode == -1            'empty try again
       next
     if keycode & $80
       'term.out("R")             'show repeated code
+
       keycode := keycode & $7F
 
     'VGA.dec(keycode)         'show code
     if (keycode == 7)
-      VGA.Str(string("left"))
+      'VGA.Str(string("left"))
+      term.str(string("Left"))
       block := block-1
       
     if (keycode == 9)
-     VGA.Str(string("right"))
+      'VGA.Str(string("right"))
+      term.str(string("Right"))
       block := block +1
-    screen[480-32+block] := "-"
-     screen[480-32+block-1] := 0 
-    screen[480-32+block+1] := 0
-
-    VGA.Str(screen) 
+    
  
     
-    
-PUB sp
-  term.out(" ")
-PUB nl
-  term.out(13)
-  term.out(10)
+pub updateScreen | i
+
+    pause(50)
+
+    repeat i from 0 to 31
+      if (block == i)
+        VGA.dec(0)
+      else
+        VGA.dec(1)
+      VGA.Str(13)
     
 pub pause(ms) | t
 

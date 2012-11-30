@@ -1,0 +1,158 @@
+!_TAG_FILE_FORMAT	1	/original ctags format/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+cog	/home/lanrat/git/IRUshabti/game/VGA.spin	/^long  cog$/
+colormask	/home/lanrat/git/IRUshabti/game/VGA.spin	/^colormask               long    $FCFCFCFC$/
+colortable	/home/lanrat/git/IRUshabti/game/VGA.spin	/^colortable    = $180$/
+d0	/home/lanrat/git/IRUshabti/game/VGA.spin	/^d0                      long    1 << 9 << 0$/
+d6	/home/lanrat/git/IRUshabti/game/VGA.spin	/^d6                      long    1 << 9 << 6$/
+hmask	/home/lanrat/git/IRUshabti/game/VGA.spin	/^hmask                   long    $02020202$/
+invisible	/home/lanrat/git/IRUshabti/game/VGA.spin	/^invisible               long    1$/
+line	/home/lanrat/git/IRUshabti/game/VGA.spin	/^line                    long    $00060000$/
+lineinc	/home/lanrat/git/IRUshabti/game/VGA.spin	/^lineinc                 long    $10000000$/
+linerot	/home/lanrat/git/IRUshabti/game/VGA.spin	/^linerot                 long    0$/
+m4	/home/lanrat/git/IRUshabti/game/VGA.spin	/^m4                      long    4_000_000$/
+m8	/home/lanrat/git/IRUshabti/game/VGA.spin	/^m8                      long    8_000_000$/
+paramcount	/home/lanrat/git/IRUshabti/game/VGA.spin	/^paramcount    = 21$/
+pllmax	/home/lanrat/git/IRUshabti/game/VGA.spin	/^pllmax                  long    128_000_000$/
+pllmin	/home/lanrat/git/IRUshabti/game/VGA.spin	/^pllmin                  long    500_000$/
+start	/home/lanrat/git/IRUshabti/game/VGA.spin	/^PUB start(vgaptr) : okay$/
+stop	/home/lanrat/git/IRUshabti/game/VGA.spin	/^PUB stop$/
+vga	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^vga : "vga"$/
+visible	/home/lanrat/git/IRUshabti/game/VGA.spin	/^visible                 long    2$/
+vmask	/home/lanrat/git/IRUshabti/game/VGA.spin	/^vmask                   long    $01010101$/
+GetChar	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^PUB GetChar(_col, _row) : char$/
+Replace	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^PUB Replace(_col, _row, _val)$/
+VGA	/home/lanrat/git/IRUshabti/game/ir_reader_demo.spin	/^VGA     : "VGA_Text_Defcon.spin"$/
+bin	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^PUB bin(value, digits)$/
+col	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^long  col, row, color, flag$/
+color	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^long  col, row, color, flag$/
+colors	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^long  colors[8 * 2]$/
+cols	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^cols = 32$/
+dec	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^PUB dec(value) | i$/
+flag	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^long  col, row, color, flag$/
+hex	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^PUB hex(value, digits)$/
+lastrow	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^lastrow = screensize - cols$/
+newline	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^PRI newline$/
+out	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^PUB out(c) | i, k$/
+palette	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^palette                 byte    %%333, %%001$/
+print	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^PRI print(c)$/
+row	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^long  col, row, color, flag$/
+rows	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^rows = 15$/
+screen	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^word  screen[screensize]$/
+screensize	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^screensize = cols * rows$/
+setcolors	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^PUB setcolors(colorptr) | i, fore, back$/
+start	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^PUB start(basepin) : okay$/
+stop	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^PUB stop$/
+str	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^PUB str(stringptr)$/
+vga_colors	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^long  vga_colors$/
+vga_count	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^vga_count = 21$/
+vga_enable	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^long  vga_enable$/
+vga_hb	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^long  vga_hb$/
+vga_hd	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^long  vga_hd$/
+vga_hf	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^long  vga_hf$/
+vga_ho	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^long  vga_ho$/
+vga_hs	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^long  vga_hs$/
+vga_ht	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^long  vga_ht$/
+vga_hx	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^long  vga_hx$/
+vga_mode	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^long  vga_mode$/
+vga_params	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^vga_params              long    0$/
+vga_pins	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^long  vga_pins$/
+vga_rate	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^long  vga_rate$/
+vga_screen	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^long  vga_screen$/
+vga_status	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^long  vga_status$/
+vga_vb	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^long  vga_vb$/
+vga_vd	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^long  vga_vd$/
+vga_vf	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^long  vga_vf$/
+vga_vo	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^long  vga_vo$/
+vga_vs	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^long  vga_vs$/
+vga_vt	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^long  vga_vt$/
+vga_vx	/home/lanrat/git/IRUshabti/game/VGA_Text_Defcon.spin	/^long  vga_vx$/
+_esl	/home/lanrat/git/IRUshabti/game/ir_reader_nec.spin	/^_esl    = 500$/
+_qsize	/home/lanrat/git/IRUshabti/game/ir_reader_nec.spin	/^_qsize  = 16$/
+_qsm1	/home/lanrat/git/IRUshabti/game/ir_reader_nec.spin	/^_qsm1   = _qsize-1$/
+_sml	/home/lanrat/git/IRUshabti/game/ir_reader_nec.spin	/^_sml    = 200$/
+_son	/home/lanrat/git/IRUshabti/game/ir_reader_nec.spin	/^_son    = 1000$/
+_zth	/home/lanrat/git/IRUshabti/game/ir_reader_nec.spin	/^_zth    = 37$/
+deviceID	/home/lanrat/git/IRUshabti/game/ir_reader_nec.spin	/^word    deviceID$/
+fifo	/home/lanrat/git/IRUshabti/game/ir_reader_nec.spin	/^byte    fifo[_qsize]$/
+fifo_debug	/home/lanrat/git/IRUshabti/game/ir_reader_nec.spin	/^PUB fifo_debug | ht$/
+fifo_flush	/home/lanrat/git/IRUshabti/game/ir_reader_nec.spin	/^PUB fifo_flush$/
+fifo_get	/home/lanrat/git/IRUshabti/game/ir_reader_nec.spin	/^PUB fifo_get | code$/
+fifo_get_lastvalid	/home/lanrat/git/IRUshabti/game/ir_reader_nec.spin	/^PUB fifo_get_lastvalid$/
+fifo_put	/home/lanrat/git/IRUshabti/game/ir_reader_nec.spin	/^PUB fifo_put(code) | len$/
+get_code	/home/lanrat/git/IRUshabti/game/ir_reader_nec.spin	/^PRI get_code  | npairs, p, code, echk$/
+get_pair	/home/lanrat/git/IRUshabti/game/ir_reader_nec.spin	/^PRI get_pair | iron, iroff$/
+head	/home/lanrat/git/IRUshabti/game/ir_reader_nec.spin	/^byte    head$/
+init	/home/lanrat/git/IRUshabti/game/ir_reader_nec.spin	/^PUB init(pin, device, repeatdelay, markrepeat) | cog$/
+irpin	/home/lanrat/git/IRUshabti/game/ir_reader_nec.spin	/^byte    irpin$/
+lastvalid	/home/lanrat/git/IRUshabti/game/ir_reader_nec.spin	/^long    lastvalid$/
+lock	/home/lanrat/git/IRUshabti/game/ir_reader_nec.spin	/^byte    lock$/
+rcvir	/home/lanrat/git/IRUshabti/game/ir_reader_demo.spin	/^rcvir   : "ir_reader_nec"$/
+receive_ir	/home/lanrat/git/IRUshabti/game/ir_reader_nec.spin	/^PRI receive_ir | code, repeated$/
+repeatlag	/home/lanrat/git/IRUshabti/game/ir_reader_nec.spin	/^byte    repeatlag$/
+repeatmark	/home/lanrat/git/IRUshabti/game/ir_reader_nec.spin	/^byte    repeatmark$/
+stack	/home/lanrat/git/IRUshabti/game/ir_reader_nec.spin	/^long    stack[20]$/
+tail	/home/lanrat/git/IRUshabti/game/ir_reader_nec.spin	/^byte    tail$/
+Bin	/opt/parallax/spin/FullDuplexSerial.spin	/^PUB Bin(value, digits)$/
+Dec	/opt/parallax/spin/FullDuplexSerial.spin	/^PUB Dec(value) | i, x$/
+Hex	/opt/parallax/spin/FullDuplexSerial.spin	/^PUB Hex(value, digits)$/
+Rx	/opt/parallax/spin/FullDuplexSerial.spin	/^PUB Rx : rxByte$/
+RxCheck	/opt/parallax/spin/FullDuplexSerial.spin	/^PUB RxCheck : rxByte$/
+RxFlush	/opt/parallax/spin/FullDuplexSerial.spin	/^PUB RxFlush$/
+RxTime	/opt/parallax/spin/FullDuplexSerial.spin	/^PUB RxTime(ms) : rxByte | t$/
+Start	/opt/parallax/spin/FullDuplexSerial.spin	/^PUB Start(rxPin, txPin, mode, baudrate) : okay$/
+Stop	/opt/parallax/spin/FullDuplexSerial.spin	/^PUB Stop$/
+Str	/opt/parallax/spin/FullDuplexSerial.spin	/^PUB Str(stringPtr)$/
+Tx	/opt/parallax/spin/FullDuplexSerial.spin	/^PUB Tx(txByte)$/
+bit_ticks	/opt/parallax/spin/FullDuplexSerial.spin	/^long  bit_ticks$/
+buffer_ptr	/opt/parallax/spin/FullDuplexSerial.spin	/^long  buffer_ptr$/
+cog	/opt/parallax/spin/FullDuplexSerial.spin	/^long  cog$/
+rx_buffer	/opt/parallax/spin/FullDuplexSerial.spin	/^byte  rx_buffer[16]$/
+rx_head	/opt/parallax/spin/FullDuplexSerial.spin	/^long  rx_head$/
+rx_pin	/opt/parallax/spin/FullDuplexSerial.spin	/^long  rx_pin$/
+rx_tail	/opt/parallax/spin/FullDuplexSerial.spin	/^long  rx_tail$/
+rxtx_mode	/opt/parallax/spin/FullDuplexSerial.spin	/^long  rxtx_mode$/
+tx_buffer	/opt/parallax/spin/FullDuplexSerial.spin	/^byte  tx_buffer[16]$/
+tx_head	/opt/parallax/spin/FullDuplexSerial.spin	/^long  tx_head$/
+tx_pin	/opt/parallax/spin/FullDuplexSerial.spin	/^long  tx_pin$/
+tx_tail	/opt/parallax/spin/FullDuplexSerial.spin	/^long  tx_tail$/
+uart	/home/lanrat/git/IRUshabti/game/serial_terminal.spin	/^uart  : "FullDuplexSerial"$/
+bin	/home/lanrat/git/IRUshabti/game/serial_terminal.spin	/^PUB bin(value, digits)$/
+dec	/home/lanrat/git/IRUshabti/game/serial_terminal.spin	/^PUB dec(value) | i, z$/
+getc	/home/lanrat/git/IRUshabti/game/serial_terminal.spin	/^PUB getc : rxbyte$/
+getcnb	/home/lanrat/git/IRUshabti/game/serial_terminal.spin	/^PUB getcnb : rxbyte$/
+hex	/home/lanrat/git/IRUshabti/game/serial_terminal.spin	/^PUB hex(value, digits)$/
+out	/home/lanrat/git/IRUshabti/game/serial_terminal.spin	/^PUB out(txbyte)$/
+putc	/home/lanrat/git/IRUshabti/game/serial_terminal.spin	/^PUB putc(txbyte)$/
+start	/home/lanrat/git/IRUshabti/game/serial_terminal.spin	/^PUB start(dummy) : okay$/
+startbd	/home/lanrat/git/IRUshabti/game/serial_terminal.spin	/^PUB startbd(baud) : okay$/
+startx	/home/lanrat/git/IRUshabti/game/serial_terminal.spin	/^PUB startx(rxpin, txpin, baud) : okay$/
+stop	/home/lanrat/git/IRUshabti/game/serial_terminal.spin	/^PUB stop$/
+str	/home/lanrat/git/IRUshabti/game/serial_terminal.spin	/^PUB str(stringPtr) | i$/
+term	/home/lanrat/git/IRUshabti/game/ir_reader_demo.spin	/^term    : "serial_terminal"$/
+CLK_FREQ	/home/lanrat/git/IRUshabti/game/ir_reader_demo.spin	/^CLK_FREQ = ((_clkmode - xtal1) >> 6) * _xinfreq$/
+MS_001	/home/lanrat/git/IRUshabti/game/ir_reader_demo.spin	/^MS_001   = CLK_FREQ / 1_000$/
+US_001	/home/lanrat/git/IRUshabti/game/ir_reader_demo.spin	/^US_001   = CLK_FREQ / 1_000_000$/
+VGA_BACKSPACE	/home/lanrat/git/IRUshabti/game/ir_reader_demo.spin	/^VGA_BACKSPACE = $08$/
+VGA_BASE_PIN	/home/lanrat/git/IRUshabti/game/ir_reader_demo.spin	/^VGA_BASE_PIN  = 16$/
+VGA_CLS	/home/lanrat/git/IRUshabti/game/ir_reader_demo.spin	/^VGA_CLS       = $00$/
+VGA_CR	/home/lanrat/git/IRUshabti/game/ir_reader_demo.spin	/^VGA_CR        = $0D$/
+VGA_HOME	/home/lanrat/git/IRUshabti/game/ir_reader_demo.spin	/^VGA_HOME      = $01$/
+VGA_SET_COLOR	/home/lanrat/git/IRUshabti/game/ir_reader_demo.spin	/^VGA_SET_COLOR = $0C$/
+VGA_SET_X	/home/lanrat/git/IRUshabti/game/ir_reader_demo.spin	/^VGA_SET_X     = $0A$/
+VGA_SET_Y	/home/lanrat/git/IRUshabti/game/ir_reader_demo.spin	/^VGA_SET_Y     = $0B$/
+VGA_TAB	/home/lanrat/git/IRUshabti/game/ir_reader_demo.spin	/^VGA_TAB       = $09$/
+_clkmode	/home/lanrat/git/IRUshabti/game/ir_reader_demo.spin	/^_clkmode        = xtal1 + pll16x$/
+_device	/home/lanrat/git/IRUshabti/game/ir_reader_demo.spin	/^_device         = 0$/
+_dlyrpt	/home/lanrat/git/IRUshabti/game/ir_reader_demo.spin	/^_dlyrpt         = 6$/
+_irrpin	/home/lanrat/git/IRUshabti/game/ir_reader_demo.spin	/^_irrpin         = 12$/
+_xinfreq	/home/lanrat/git/IRUshabti/game/ir_reader_demo.spin	/^_xinfreq        = 5_000_000$/
+block	/home/lanrat/git/IRUshabti/game/ir_reader_demo.spin	/^long block$/
+pause	/home/lanrat/git/IRUshabti/game/ir_reader_demo.spin	/^pub pause(ms) | t$/
+screen	/home/lanrat/git/IRUshabti/game/ir_reader_demo.spin	/^byte screen[32]$/
+start	/home/lanrat/git/IRUshabti/game/ir_reader_demo.spin	/^PUB start | keycode, i$/
+updateScreen	/home/lanrat/git/IRUshabti/game/ir_reader_demo.spin	/^pub updateScreen | i$/
