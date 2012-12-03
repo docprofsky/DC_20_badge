@@ -1,7 +1,0 @@
-ir_reader_demo.spin
-vga.spin
-VGA_Text_Defcon.spin
-ir_reader_nec.spin
-FullDuplexSerial.spin
-serial_terminal.spin
->compiler=SPIN
